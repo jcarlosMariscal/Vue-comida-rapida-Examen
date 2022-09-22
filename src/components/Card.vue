@@ -1,7 +1,10 @@
 <template>
-  <grid>
+  <!-- <grid> -->
+  <div class="allCard">
     <div class="card" style="width: 18rem">
-      <img class="card-img-top img-fluid" v-bind:src="url" :alt="nombre" />
+      <imagen>
+        <img class="card-img-top img-fluid" v-bind:src="url" :alt="nombre" />
+      </imagen>
       <div class="card-body">
         <h5 class="card-title">{{ nombre }}</h5>
         <p class="card-text">
@@ -12,14 +15,15 @@
         <li class="list-group-item">{{ costo }}</li>
       </ul>
       <!-- <div class="card-body">
-        <a href="#" class="card-link">Card link</a>
-        <a href="#" class="card-link">Another link</a>
-      </div> -->
+          <a href="#" class="card-link">Card link</a>
+          <a href="#" class="card-link">Another link</a>
+        </div> -->
     </div>
-  </grid>
+  </div>
+  <!-- </grid> -->
 </template>
 <script>
-import Grid from "./Grid.vue";
+import Imagen from "./Imagen.vue";
 export default {
   props: {
     url: {
@@ -35,17 +39,17 @@ export default {
       String,
     },
   },
-  components: { Grid },
+  components: { Imagen },
 };
 </script>
 <style scoped>
-img {
-  /* width: 4rem; */
-  widows: 100%;
-  height: 150px;
-  /* height: 2rem; */
-  /* padding: 4rem; */
-  background: snow;
+.allCard {
+  display: inline-block;
+  text-align: center;
+  border: 1px solid #f2f2f2;
+  padding: 1%;
+  border-radius: 5px;
+  margin: 4px;
 }
 a {
   text-decoration: none;

@@ -29,6 +29,14 @@
         <li class="nav-item">
           <a class="nav-link" href="#">Postres</a>
         </li>
+        <li class="nav-item active">
+          <a
+            class="nav-link"
+            href="https://github.com/jcarlosMariscal/Vue-comida-rapida-Examen"
+            target="_blank"
+            >Código GitHub</a
+          >
+        </li>
       </ul>
       <span class="navbar-text"> {{ nombreAlumno }} - {{ grupo }} </span>
     </div>
