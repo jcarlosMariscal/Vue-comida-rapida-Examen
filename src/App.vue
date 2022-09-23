@@ -4,7 +4,11 @@
     nombreAlumno="Juan Carlos Ramírez Mariscal"
     grupo="10A"
   />
+  <br />
   <div class="container">
+    <br />
+    <h3 class="text-center">Ensaladas y Entrantes</h3>
+    <br />
     <card
       url="https://www.clara.es/medio/2021/12/16/que-comer-hoy-ideas_21beeb02_1200x630.jpg"
       nombre="Espirales con verduras"
@@ -52,3 +56,10 @@ export default {
   components: { Card, HeaderNav, MyFooter },
 };
 </script>
+<style scoped>
+.container {
+  /* background-color: red; */
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+</style>

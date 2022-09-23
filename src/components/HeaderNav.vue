@@ -58,3 +58,19 @@ export default {
   },
 };
 </script>
+<style scoped>
+.navbar-text {
+  background-color: rgb(62, 68, 68);
+  padding: 5px;
+  color: aliceblue;
+  font-size: 18px;
+}
+.navbar-text:hover {
+  background-color: transparent;
+  padding: 5px;
+  color: aliceblue;
+  font-size: 18px;
+  transition: 0.5s ease-in-out;
+  cursor: pointer;
+}
+</style>

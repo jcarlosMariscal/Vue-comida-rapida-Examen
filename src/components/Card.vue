@@ -1,13 +1,13 @@
 <template>
   <!-- <grid> -->
   <div class="allCard">
-    <div class="card" style="width: 18rem">
+    <div class="card">
       <imagen>
-        <img class="card-img-top img-fluid" v-bind:src="url" :alt="nombre" />
+        <img class="card-img-top" v-bind:src="url" :alt="nombre" />
       </imagen>
       <div class="card-body">
         <h5 class="card-title">{{ nombre }}</h5>
-        <p class="card-text">
+        <p class="card-text text-justify">
           {{ descripcion }}
         </p>
       </div>
@@ -46,10 +46,16 @@ export default {
 .allCard {
   display: inline-block;
   text-align: center;
-  border: 1px solid #f2f2f2;
+  /* border: 1px solid #f2f2f2; */
   padding: 1%;
-  border-radius: 5px;
+  /* border-radius: 5px; */
   margin: 4px;
+  display: flex;
+  justify-content: center;
+  /* background-color: aqua; */
+}
+.allCard .card {
+  width: 95%;
 }
 a {
   text-decoration: none;
