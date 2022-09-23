@@ -1,11 +1,8 @@
 <template>
-  <div>
-    <slot></slot>
-  </div>
+  <slot></slot>
 </template>
 <style scoped>
-img {
-  widows: 100%;
-  height: 180px;
+:slotted(img) {
+  height: 200px;
 }
 </style>
